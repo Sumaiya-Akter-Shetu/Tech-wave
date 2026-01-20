@@ -303,11 +303,87 @@ body {
   margin-top: 30px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 576px) {
-  .nav-links { display: none; }
-  .stats { grid-template-columns: repeat(2,1fr); }
-  .cards,
-  .episode-cards { grid-template-columns: 1fr; }
-  .host-box { flex-direction: column; }
+
+
+
+@media screen and (max-width: 576px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  * {
+    max-width: 100%;
+  }
+
+  /* nab section */
+  .navbar {
+    padding: 15px 16px;
+  }
+  .hidden {
+    display: none;
+  }
+ .hidden-2 {
+  display: flex;
+ }
+  /* hero section*/
+  .hero {
+    padding: 50px 12px;
+  }
+
+  .circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .badge {
+    right: 10px;
+    left: auto;
+  }
+
+  /* about section */
+  .about p {
+    padding: 0 12px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* why section */
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 30px 12px;
+  }
+
+  .card {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  /* episode section */
+  .episode-cards {
+    flex-direction: column;
+    padding: 0 12px;
+  }
+
+  .episode {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  /* host sectiion */
+  .host-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* footer section */
+  .platforms {
+    flex-direction: column;
+  }
 }
