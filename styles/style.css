@@ -6,6 +6,7 @@
 }
 
 body {
+  max-width: 1600px;
   background: #16002b;
   color: #fff;
 }
@@ -122,31 +123,77 @@ body {
   margin-bottom: 10px;
 }
 
+
 /* Why section */
 .why {
-  background-color: #230E3D;
+  
+  background-color: #17082E;
   padding: 80px 20px;
   text-align: center;
   margin-top: 60px;
+  color: white;
 }
+
 .why h2 {
-  font-size: 50px;
+  font-size: 48px;
 }
+
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-  margin-top: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 180px);
+  gap: 25px 25px;
+  justify-content: center;
+  padding: 100px;
 }
+
 
 .card {
-  background: rgba(53, 17, 101, 0.4);
-  padding: 25px;
+  background: rgba(53, 17, 101, 0.45);
+  padding: 30px;
   border-radius: 20px;
-
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-  
+.card img {
+  width: 45px;
+  height: 45px; }
+
+
+
+.card.premium {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+
+.card.mobile {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+
+.card.community {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+
+.card.exclusive {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+
+.card.resource {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+} 
+
 
 /* episode section */
 .episodes h2{
